@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b44585-5a85-4b28-87ae-c42b40524f8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java" afterPath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/Skale.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java" afterPath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ImageProcessing2015.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+              <caret line="19" column="60" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -77,11 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageFilterApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageFilterApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57227725">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Skale.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/Skale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8079208">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -110,8 +122,9 @@
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/FilteredImageWindow.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/RGB.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/GrayScaleFilter.java" />
-        <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java" />
+        <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java" />
+        <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/Skale.java" />
       </list>
     </option>
   </component>
@@ -458,12 +471,12 @@
       <created>1427793968564</created>
       <option name="number" value="Default" />
       <updated>1427793968564</updated>
-      <workItem from="1427793975202" duration="3322000" />
+      <workItem from="1427793975202" duration="3661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3322000" />
+    <option name="totallyTimeSpent" value="3661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="903" extended-state="6" />
@@ -556,14 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/CopyFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -605,8 +610,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57227725">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/Skale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8079208">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
       </provider>

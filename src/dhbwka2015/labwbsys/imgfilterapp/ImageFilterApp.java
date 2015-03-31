@@ -15,7 +15,8 @@ public class ImageFilterApp {
 
         //filter = new GrayScaleFilter();
         //filter = new CopyFilter();
-        filter = new BorderFilter();
+        //filter = new BorderFilter();
+        filter = new Skale();
 
         FilteredImageWindow app = new FilteredImageWindow(filter, DefaultImageFile);
         app.setTitle("Image Filter Test Application");
