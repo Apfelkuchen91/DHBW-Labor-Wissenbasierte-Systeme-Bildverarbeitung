@@ -23,9 +23,8 @@ public class SegmentColorFilter implements ImageFilterIf {
 				
 				RGB rgb = new RGB(model.getRGB(inPix));
 				Color color = new Color(rgb.getRed(), rgb.getGreen(), rgb.getBlue(), rgb.getAlpha());
-				color.getHSBColor();
 				
-				outRaster.setDataElements(i, j, outmodel.getDataElements(rgb, null));
+				outRaster.setDataElements(i, j, outmodel.getDataElements(rgb.getRGB(), null));
 			}
 		}
 	}

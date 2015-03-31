@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b44585-5a85-4b28-87ae-c42b40524f8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/SegmentColorFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/edgedetect2.jpg" afterPath="$PROJECT_DIR$/data/edgedetect2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/redeye1.jpg" afterPath="$PROJECT_DIR$/data/redeye1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/RGB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/SegmentColorFilter.java" afterPath="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/SegmentColorFilter.java" />
     </list>
     <ignored path="ImageProcessing2015.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,12 +35,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SegmentColorFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SegmentColorFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/SegmentColorFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43762377">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RGB.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/RGB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.57227725">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding>
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1220#1221#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,11 +99,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/FilteredImageWindow.java" />
-        <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/RGB.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/GrayScaleFilter.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/BorderFilter.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilterapp/ImageFilterApp.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/Skale.java" />
+        <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/RGB.java" />
         <option value="$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/SegmentColorFilter.java" />
       </list>
     </option>
@@ -426,15 +457,15 @@
       <created>1427793968564</created>
       <option name="number" value="Default" />
       <updated>1427793968564</updated>
-      <workItem from="1427793975202" duration="4633000" />
+      <workItem from="1427793975202" duration="5657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4633000" />
+    <option name="totallyTimeSpent" value="5657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="903" extended-state="7" />
+    <frame x="-8" y="-8" width="1932" height="903" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -526,9 +557,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/SegmentColorFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43762377">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dhbwka2015/labwbsys/imgfilters/RGB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57227725">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
