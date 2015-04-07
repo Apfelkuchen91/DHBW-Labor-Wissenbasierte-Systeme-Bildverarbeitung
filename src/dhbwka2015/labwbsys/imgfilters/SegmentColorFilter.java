@@ -15,14 +15,28 @@ public class SegmentColorFilter implements ImageFilterIf {
 
 		ColorModel model = in.getColorModel();
 		ColorModel outmodel = out.getColorModel();
-		
+
+		float hueMin = 0.0f;
+		float hueMax = 0.2f;
+		float saturationMin = 0.7f;
+		float saturationMax = 0.9f;
+		float brightnessMin = 0.3f;
+		float brightnessMax = 0.5f;
+
 		for (int i = 0; i < in.getWidth(); ++i) {
 			for (int j = 0; j < in.getHeight(); ++j) {
 
 				Object inPix = inRaster.getDataElements(i, j, null);
 				
 				RGB rgb = new RGB(model.getRGB(inPix));
-				Color color = new Color(rgb.getRed(), rgb.getGreen(), rgb.getBlue(), rgb.getAlpha());
+				HSB hsb = rgb.getHSB();
+
+				if(		(hueMin <= hsb.getHue() && hsb.getHue() <= hueMax)
+					&&	(saturationMin <= hsb.getSaturation() && hsb.getSaturation() <= saturationMax)
+					&&	(brightnessMin <= hsb.getBrightness() && hsb.getBrightness() <= brightnessMax)	)
+				{
+					rgb = new RGB(0xFF, 0xFF, 0xFF, 0xFF);
+				}
 				
 				outRaster.setDataElements(i, j, outmodel.getDataElements(rgb.getRGB(), null));
 			}

@@ -17,7 +17,8 @@ public class ImageFilterApp {
 //		filter = new UnknownFilter();
 //		filter = new GrayScaleFilter();
 //		filter = new FrameFilter();
-		filter = new GrayArtImageFilter();
+//		filter = new GrayArtImageFilter();
+        filter = new SegmentColorFilter();
 		
 		FilteredImageWindow app = new FilteredImageWindow(filter, DefaultImageFile);
 		app.setTitle("Image Filter Test Application");
