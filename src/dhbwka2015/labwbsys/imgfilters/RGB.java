@@ -51,7 +51,7 @@ public class RGB {
 
     public void setRed(int red) {
         this.red = red;
-     }
+    }
 
     public int getGreen() {
         return green;
@@ -69,9 +69,29 @@ public class RGB {
         this.blue = blue;
     }
 
+    private int getGeayValue() {
+        return (getRed() + getGreen() + getBlue()) / 3;
+    }
+
+    public RGB getGray() {
+
+        return new RGB(getAlpha(), getGeayValue(), getGeayValue(), getGeayValue());
+    }
+
     public HSB getHSB() {
         float[] hsb = new float[3];
         Color.RGBtoHSB(getRed(), getGreen(), getBlue(), hsb);
-        return new HSB(hsb[0],hsb[1],hsb[2]);
+        return new HSB(hsb[0], hsb[1], hsb[2]);
+    }
+
+    public boolean isEqual(RGB compare) {
+        return (getAlpha() == compare.getAlpha())
+                && (getRed() == compare.getRed())
+                && (getGreen() == compare.getGreen())
+                && (getBlue() == compare.getBlue());
+    }
+
+    public boolean getBin() {
+        return (getGeayValue() > 0xF);
     }
 }
