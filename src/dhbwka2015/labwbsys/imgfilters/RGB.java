@@ -12,7 +12,7 @@ public class RGB {
     private int blue = 0;
 
     public RGB(int rgb) {
-        setRed(rgb);
+        setRGB(rgb);
     }
 
     public RGB(int a, int r, int g, int b) {
@@ -51,7 +51,7 @@ public class RGB {
 
     public void setRed(int red) {
         this.red = red;
-    }
+     }
 
     public int getGreen() {
         return green;
@@ -70,8 +70,8 @@ public class RGB {
     }
 
     public HSB getHSB() {
-        float[] hsv = new float[3];
-        Color.RGBtoHSB(getRed(), getGreen(), getBlue(), hsv);
-        return new HSB(hsv[0],hsv[1],hsv[2]);
+        float[] hsb = new float[3];
+        Color.RGBtoHSB(getRed(), getGreen(), getBlue(), hsb);
+        return new HSB(hsb[0],hsb[1],hsb[2]);
     }
 }
