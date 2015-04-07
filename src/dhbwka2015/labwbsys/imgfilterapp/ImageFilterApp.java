@@ -16,7 +16,8 @@ public class ImageFilterApp {
 //		filter = new FrameFilter();
 //		filter = new GrayArtImageFilter();
 //      filter = new SegmentColorFilter();
-        filter = new OutlineFilter();
+//        filter = new ErodeFilter();
+        filter = new DilateFilter();
 
         FilteredImageWindow app = new FilteredImageWindow(filter, DefaultImageFile);
         app.setTitle("Image Filter Test Application");

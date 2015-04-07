@@ -22,14 +22,17 @@ public abstract class MorphologicalImageProcessing implements ImageFilterIf {
 
                 Object inPix = inRaster.getDataElements(i, j, null);
 
-                RGB rgb = new RGB(0xFF, 0, 0, 0);
+                RGB rgb = new RGB(model.getRGB(inPix));
+                int val = rgb.getBin() ? 0xFF : 0;
 
-                if(getValueArround(in, i, j))
-                {
-                    rgb = new RGB(0xFF, 0xFF, 0xFF, 0xFF);
+                RGB outRgb = new RGB(rgb.getAlpha(), val, val, val);
+
+                if (getValueArround(in, i, j)) {
+                    int valare = rgb.getBin() ? 0 : 0xFF;
+                    outRgb = new RGB(rgb.getAlpha(), valare, valare, valare);
                 }
 
-                outRaster.setDataElements(i, j, outmodel.getDataElements(rgb.getRGB(), null));
+                outRaster.setDataElements(i, j, outmodel.getDataElements(outRgb.getRGB(), null));
             }
         }
     }
@@ -51,8 +54,8 @@ public abstract class MorphologicalImageProcessing implements ImageFilterIf {
         surroundRgb.add(new RGB(model.getRGB(inRaster.getDataElements(i - 1, j, null))));
         surroundRgb.add(new RGB(model.getRGB(inRaster.getDataElements(i - 1, j - 1, null))));
 
-        for(RGB compRgb : surroundRgb ){
-            if(compRgb.getBin() == masterRgb.getBin()) {
+        for (RGB compRgb : surroundRgb) {
+            if (compRgb.getBin() == masterRgb.getBin()) {
                 compCount++;
             }
         }

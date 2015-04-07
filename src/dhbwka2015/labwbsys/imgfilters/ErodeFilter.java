@@ -1,11 +1,9 @@
 package dhbwka2015.labwbsys.imgfilters;
 
 
-
-public class OutlineFilter extends MorphologicalImageProcessing {
-
+public class ErodeFilter extends MorphologicalImageProcessing{
     @Override
     boolean isAccepted(int compCount) {
-        return compCount == 8;
+        return compCount >= 8;
     }
 }
