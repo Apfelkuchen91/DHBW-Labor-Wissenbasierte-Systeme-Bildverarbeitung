@@ -1,5 +1,7 @@
 package dhbwka2015.labwbsys.imgfilters;
 
+import java.awt.*;
+
 /**
  * Created by JCDM on 31.03.2015.
  */
@@ -65,5 +67,11 @@ public class RGB {
 
     public void setBlue(int blue) {
         this.blue = blue;
+    }
+
+    public HSB getHSB() {
+        float[] hsv = new float[3];
+        Color.RGBtoHSB(getRed(), getGreen(), getBlue(), hsv);
+        return new HSB(hsv[0],hsv[1],hsv[2]);
     }
 }
