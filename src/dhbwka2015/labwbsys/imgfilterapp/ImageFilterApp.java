@@ -13,8 +13,12 @@ public class ImageFilterApp {
 	public static void main(String[] args) {
 		ImageFilterIf filter = null;
 		
-		filter = new CopyFilter();
-	
+//		filter = new CopyFilter();
+//		filter = new UnknownFilter();
+//		filter = new GrayScaleFilter();
+//		filter = new FrameFilter();
+		filter = new GrayArtImageFilter();
+		
 		FilteredImageWindow app = new FilteredImageWindow(filter, DefaultImageFile);
 		app.setTitle("Image Filter Test Application");
 	}

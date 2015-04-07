@@ -5,6 +5,11 @@ import dhbwka2015.labwbsys.imgfilters.ImageFilterIf;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.ClipboardOwner;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -12,6 +17,7 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
@@ -27,7 +33,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
-public class FilteredImageWindow extends JFrame implements ActionListener {
+public class FilteredImageWindow extends JFrame implements ActionListener, ClipboardOwner {
 
 	/**
 	 * 
@@ -214,9 +220,17 @@ public class FilteredImageWindow extends JFrame implements ActionListener {
 		int a = (pixel >> 24) & 0xff;
 		int r = (pixel >> 16) & 0xff;
 		int g = (pixel >> 8) & 0xff;
-		int b = pixel & 0xff;
+		int b = pixel & 0xff;		
 		
-		labelStatus.setText("Position (X/Y): " + x + " / " + y + "       Farbe (A/R/G/B): " + a + " / " + r + " / " + g + " / " + b);
+		float[] hsv = new float[3];
+		Color.RGBtoHSB(r,g,b,hsv);
+		DecimalFormat df = new DecimalFormat("0.000");
+		
+		labelStatus.setText("Position (X/Y): " + x + " / " + y + "       Farbe (A/R/G/B): " + a + " / " + r + " / " + g + " / " + b + "       Farbe (H/S/V): " + df.format(hsv[0]) + " / " + df.format(hsv[1]) + " / " + df.format(hsv[2]));
+		
+		StringSelection ss = new StringSelection("" + x + "," + y);
+		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+	    clipboard.setContents(ss, this);
 	}
 	
 	private void handleNewImages() {
@@ -311,6 +325,13 @@ public class FilteredImageWindow extends JFrame implements ActionListener {
 			handleNewImages();
 		}
 	}
+
+	@Override
+	public void lostOwnership(Clipboard clipboard, Transferable contents) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
 
 
