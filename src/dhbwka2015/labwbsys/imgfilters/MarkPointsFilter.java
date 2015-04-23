@@ -38,6 +38,7 @@ public class MarkPointsFilter implements ImageFilterIf {
         ColorModel inModel = in.getColorModel();
         ColorModel outModel = out.getColorModel();
 
+
         for (int i = 0; i < in.getWidth(); ++i) {
             for (int j = 0; j < in.getHeight(); ++j) {
                 int px = inModel.getRGB(inRaster.getDataElements(i, j, null));
@@ -46,6 +47,7 @@ public class MarkPointsFilter implements ImageFilterIf {
                 outRaster.setDataElements(i, j, pxData);
             }
         }
+
 
         int count = 0;
         for (int[] p : pointList) {
@@ -62,6 +64,10 @@ public class MarkPointsFilter implements ImageFilterIf {
             count++;
         }
 
+        if (!parameters.get(0).isEmpty()) {
+            return;
+        }
+
         perceptron.learn(samples);
 
         System.out.println("\nFinal Perceptron:");
@@ -73,8 +79,7 @@ public class MarkPointsFilter implements ImageFilterIf {
                 RGB px = new RGB(inModel.getRGB(inRaster.getDataElements(i, j, null)));
 
                 double[] inPer = px.getHSB().getVector();
-                if(perceptron.calcStepResult(inPer) > 0.9)
-                {
+                if (perceptron.calcStepResult(inPer) > 0.9) {
                     System.out.println(i + " " + j);
                     px = new RGB(0xFF, 0xFF, 0xFF, 0xFF);
                 }
