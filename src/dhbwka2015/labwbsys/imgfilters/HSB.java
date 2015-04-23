@@ -44,4 +44,15 @@ public class HSB {
     public RGB getRGB() {
         return new RGB(Color.HSBtoRGB(getHue(), getSaturation(), getBrightness()));
     }
+
+    public double[] getVector()
+    {
+        double[] retval = new double[3];
+
+        retval[0] = getHue();
+        retval[1] = getSaturation();
+        retval[2] = getBrightness();
+
+        return retval;
+    }
 }
